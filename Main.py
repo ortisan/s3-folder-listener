@@ -42,7 +42,7 @@ if __name__ == '__main__':
 
         for opt, arg in opts:
             if opt == '-h':
-                print('file.py -f <folder_to_listen> -b <bucket_path> -p <file_patterns sep. comma>')
+                print('file.py -f <folder_to_listen> -b <bucket_path> -p <file patterns sep. by comma>')
                 sys.exit()
             elif opt in ("-f", "--folder"):
                 file_path = arg
@@ -64,8 +64,7 @@ if __name__ == '__main__':
         observer.join()
 
     except getopt.GetoptError as exc:
-        print exc
-        print('file.py -f <folder_to_listen> -b <bucket_path> -e <file_extensions sep. comma>')
+        print('file.py -f <folder_to_listen> -b <bucket_path> -p <file patterns sep. by comma>')
         sys.exit(2)
     except BaseException as exc:
         print(exc)
