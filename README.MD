@@ -8,5 +8,5 @@ python Main.py -h
 
 
 ```python
-python Main.py -f /home/marcelo/googleplay-scraper/imgs -b ://imgs-teste -p *.png
+python Main.py -f /home/marcelo/googleplay-scraper/imgs -b s3://imgs-teste -p *.png
 ```
